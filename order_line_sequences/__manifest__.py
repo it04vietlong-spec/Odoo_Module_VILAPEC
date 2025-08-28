@@ -1,0 +1,27 @@
+{
+    'name': 'Order Line Sequences/Line Numbers',
+    'version': '18.0.1.0.0',
+    'category': 'Extra Tools',
+    'summary': 'Sequence numbers in order lines of sales,purchase, purchase request and delivery.',
+    'description': """This module will help you to add sequence for order lines
+    in sales, purchase and delivery. It will also add line numbers in report lines.""",
+    'author': 'Custom module',
+    'company': 'Custom module',
+    'maintainer': 'Custom module',
+    'website': "https://www.vilapec.com",
+    'depends': ['base', 'sale_management', 'purchase', 'stock', 'purchase_request'],
+    'data': [
+        'views/sale_order_views.xml',
+        'views/purchase_order_views.xml',
+        'views/stock_picking_views.xml',
+		'views/purchase_request_views.xml',
+        'views/sale_order_templates.xml',
+        'views/stock_picking_templates.xml',
+        'views/purchase_order_templates.xml',
+    ],
+    'images': ['static/description/banner.jpg'],
+    'license': 'AGPL-3',
+    'installable': True,
+    'auto_install': False,
+    'application': False,
+}
