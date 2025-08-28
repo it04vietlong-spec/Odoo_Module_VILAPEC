@@ -31,6 +31,7 @@ class StockMove(models.Model):
 
     sequence_number = fields.Integer(
         string="#",
+        default=1,
         help="Line Numbers"
     )
 
@@ -44,14 +45,5 @@ class StockMove(models.Model):
 
 
 class StockPicking(models.Model):
-    """ Class for inherited model stock picking. Contains
-        a function for computing line numbers."""
+    """ Class for inherited model stock picking."""
     _inherit = 'stock.picking'
-
-    @api.onchange('move_ids_without_package')
-    def _onchange_move_ids_without_package(self):
-        """For calculating line number of operations"""
-        sequence_number = 1
-        for rec in self.move_ids_without_package:
-            rec.sequence_number = sequence_number
-            sequence_number += 1

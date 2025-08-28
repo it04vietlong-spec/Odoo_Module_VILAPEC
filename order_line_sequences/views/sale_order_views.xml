@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <!--    Inherited sale order form view-->
-    <record id="view_order_form" model="ir.ui.view">
-        <field name="name">sale.order.view.form.inherit.order.line.sequences
-        </field>
+    <record id="view_order_form_inherit_sequence_number" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.sequence_number</field>
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="priority">1000</field>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='order_line']//list//field[@name='product_id']"
-                   position="before">
-                <field name="sequence_number"/>
+            <xpath expr="//field[@name='order_line']/list/field[@name='sequence']" position="replace">
+                <field name="sequence_number" string="#" readonly="1"/>
             </xpath>
         </field>
     </record>
 </odoo>
+
+
