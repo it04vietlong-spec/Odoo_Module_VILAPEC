@@ -21,24 +21,49 @@
 ################################################################################
 from odoo import api, fields, models
 
-class SaleOrderLine(models.Model):
-    _inherit = "sale.order.line"
 
-    sequence_number = fields.Integer(
-        string="#",
-        default=0,
-        index=True,
-        help="Fixed line number (not resequenced after delete)"
-    )
+class SaleOrderLine(models.Model):
+    """ Class for inherited model sale order line. Contains a field for line
+            numbers and a function for computing line numbers.
+    """
+
+    _inherit = 'sale.order.line'
 
     _order = "sequence_number asc, id asc"
 
+    sequence_number = fields.Integer(
+        string="#",
+        default=1,
+        help="Line Numbers"
+    )
+
     @api.model
     def create(self, vals):
-        """Assign fixed increasing sequence number"""
-        if "order_id" in vals:
-            order = self.env["sale.order"].browse(vals["order_id"])
-            max_seq = max(order.order_line.mapped("sequence_number") or [0])
-            vals["sequence_number"] = max_seq + 1
+        if 'order_id' in vals:
+            order = self.env['sale.order'].browse(vals['order_id'])
+            max_seq = max(order.order_line.mapped('sequence_number') or [0])
+            vals['sequence_number'] = max_seq + 1
         return super().create(vals)
+
+
+class SaleOrder(models.Model):
+    _inherit = 'sale.order'
+
+    sequence_cleanup_done = fields.Boolean(
+        compute='_compute_sequence_cleanup_done',
+        store=False,
+    )
+
+    def _compute_sequence_cleanup_done(self):
+        for order in self:
+            done = True
+            lines = order.order_line
+            # Nếu vẫn còn dòng STT = 0 thì đánh lại từ 1..n theo thứ tự UI (sequence, id)
+            if any(not l.sequence_number for l in lines):
+                done = False
+                for idx, line in enumerate(lines.sorted(lambda l: (l.sequence, l.id or 0)), start=1):
+                    if line.sequence_number != idx:
+                        line.sequence_number = idx
+                done = True
+            order.sequence_cleanup_done = done
 

@@ -31,7 +31,6 @@ class StockMove(models.Model):
 
     sequence_number = fields.Integer(
         string="#",
-        default=1,
         help="Line Numbers"
     )
 
@@ -47,3 +46,20 @@ class StockMove(models.Model):
 class StockPicking(models.Model):
     """ Class for inherited model stock picking."""
     _inherit = 'stock.picking'
+
+    sequence_cleanup_done = fields.Boolean(
+        compute='_compute_sequence_cleanup_done',
+        store=False,
+    )
+
+    def _compute_sequence_cleanup_done(self):
+        for picking in self:
+            done = True
+            lines = picking.move_ids_without_package
+            if any(not l.sequence_number for l in lines):
+                done = False
+                for idx, line in enumerate(lines.sorted(lambda l: (l.sequence, l.id or 0)), start=1):
+                    if line.sequence_number != idx:
+                        line.sequence_number = idx
+                done = True
+            picking.sequence_cleanup_done = done

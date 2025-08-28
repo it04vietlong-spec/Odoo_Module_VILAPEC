@@ -6,6 +6,11 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="priority">1000</field>
         <field name="arch" type="xml">
+            <!-- Kích hoạt compute làm sạch STT khi mở form -->
+            <xpath expr="//sheet" position="inside">
+                <field name="sequence_cleanup_done" invisible="1"/>
+            </xpath>
+            <!-- Thay thế cột handle bằng STT -->
             <xpath expr="//field[@name='order_line']/list/field[@name='sequence']" position="replace">
                 <field name="sequence_number" string="#" readonly="1"/>
             </xpath>
