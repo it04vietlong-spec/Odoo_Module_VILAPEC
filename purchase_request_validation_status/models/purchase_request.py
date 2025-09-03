@@ -17,13 +17,6 @@ class PurchaseRequest(models.Model):
         help='Ngày validate gần nhất'
     )
     
-    last_validation_date_formatted = fields.Char(
-        string='Ngày Validate (Định dạng)',
-        compute='_compute_last_validation_date_formatted',
-        store=True,
-        help='Ngày validate gần nhất'
-    )
-    
     @api.depends('review_ids', 'review_ids.status', 'review_ids.reviewed_date')
     def _compute_validation_status_display(self):
         """Tính toán trạng thái validate hiển thị"""
@@ -52,13 +45,3 @@ class PurchaseRequest(models.Model):
                     record.last_validation_date = False
             else:
                 record.last_validation_date = False
-    
-    @api.depends('last_validation_date')
-    def _compute_last_validation_date_formatted(self):
-        """Format theo định dạng: DD/MM/YYYY HH:MM"""
-        for record in self:
-            if record.last_validation_date:
-                formatted_date = record.last_validation_date.strftime('%d/%m/%Y %H:%M')
-                record.last_validation_date_formatted = formatted_date
-            else:
-                record.last_validation_date_formatted = ''

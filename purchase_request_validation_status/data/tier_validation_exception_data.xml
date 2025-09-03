@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Exception cho các trường validation của Purchase Request -->
+        <record id="purchase_request_validation_exception" model="tier.validation.exception">
+            <field name="name">Purchase Request Validation Fields Exception</field>
+            <field name="model_id" ref="purchase_request.model_purchase_request"/>
+            <field name="field_ids" eval="[
+                (6, 0, [
+                    ref('purchase_request_validation_status.field_purchase_request__validation_status_display'),
+                    ref('purchase_request_validation_status.field_purchase_request__last_validation_date')
+                ])
+            ]"/>
+            <field name="allowed_to_write_under_validation">True</field>
+            <field name="allowed_to_write_after_validation">True</field>
+        </record>
+        
+        <!-- Exception cho trường State (Status) -->
+        <record id="purchase_request_state_exception" model="tier.validation.exception">
+            <field name="name">Purchase Request State Exception</field>
+            <field name="model_id" ref="purchase_request.model_purchase_request"/>
+            <field name="field_ids" eval="[
+                (6, 0, [
+                    ref('purchase_request.field_purchase_request__state')
+                ])
+            ]"/>
+            <field name="allowed_to_write_under_validation">True</field>
+            <field name="allowed_to_write_after_validation">True</field>
+        </record>
+        
+        <!-- Exception tổng quát cho Purchase Request -->
+        <record id="purchase_request_general_exception" model="tier.validation.exception">
+            <field name="name">Purchase Request General Exception</field>
+            <field name="model_id" ref="purchase_request.model_purchase_request"/>
+            <field name="field_ids" eval="[
+                (6, 0, [
+                    ref('purchase_request.field_purchase_request__name'),
+                    ref('purchase_request.field_purchase_request__description'),
+                    ref('purchase_request.field_purchase_request__origin'),
+                    ref('purchase_request.field_purchase_request__date_start'),
+                    ref('purchase_request.field_purchase_request__assigned_to'),
+                    ref('purchase_request.field_purchase_request__line_ids')
+                ])
+            ]"/>
+            <field name="allowed_to_write_under_validation">True</field>
+            <field name="allowed_to_write_after_validation">True</field>
+        </record>
+        
+        <!-- Exception tổng quát cho tất cả trường Purchase Request -->
+        <record id="purchase_request_all_fields_exception" model="tier.validation.exception">
+            <field name="name">Purchase Request All Fields Exception</field>
+            <field name="model_id" ref="purchase_request.model_purchase_request"/>
+            <field name="field_ids" eval="[(6, 0, [])]"/>
+            <field name="allowed_to_write_under_validation">True</field>
+            <field name="allowed_to_write_after_validation">True</field>
+        </record>
+    </data>
+</odoo>
