@@ -9,7 +9,7 @@
             <!-- Thêm cột Trạng thái Validate sau cột Status -->
             <xpath expr="//field[@name='state']" position="after">
                 <field name="validation_status_display" 
-                       string="Trạng thái Validate"
+                       string="Validation Status"
                        optional="show"
                        decoration-success="validation_status_display == '2/2'"
                        decoration-warning="validation_status_display == '1/2'"
@@ -18,8 +18,8 @@
             
             <!-- Thêm cột Ngày Validate sau cột Trạng thái Validate -->
             <xpath expr="//field[@name='validation_status_display']" position="after">
-                <field name="last_validation_date_formatted" 
-                       string="Ngày Validate"
+                <field name="last_validation_date" 
+                       string="Validation Date"
                        optional="show"/>
             </xpath>
         </field>

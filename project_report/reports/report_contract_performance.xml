@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_contract_performance_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="text-center">
+                            <h3><strong>BÁO CÁO KẾT QUẢ THỰC HIỆN HỢP ĐỒNG</strong></h3>
+                        </div>
+                        
+                        <!-- Thông tin hợp đồng -->
+                        <table class="table table-borderless mt-3">
+                            <tr>
+                                <td width="20%"><strong>Số Hợp đồng:</strong></td>
+                                <td width="30%"><span t-field="o.contract_number"/></td>
+                                <td width="20%"><strong>Tên khách hàng:</strong></td>
+                                <td width="30%"><span t-field="o.customer_id.name"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Địa điểm thực hiện:</strong></td>
+                                <td><span t-field="o.execution_location"/></td>
+                                <td><strong>Thời gian thực hiện hợp đồng:</strong></td>
+                                <td><span t-field="o.contract_execution_datetime"/></td>
+                            </tr>
+                        </table>
+
+                        <!-- Bảng chi tiết -->
+                        <table class="table table-bordered mt-4">
+                            <thead>
+                                <tr class="text-center">
+                                    <th style="width: 5%"><strong>STT</strong></th>
+                                    <th style="width: 25%"><strong>Nội dung công việc</strong></th>
+                                    <th style="width: 15%"><strong>Nhân sự</strong></th>
+                                    <th style="width: 15%"><strong>Theo kế hoạch</strong></th>
+                                    <th style="width: 15%"><strong>Kết quả thực hiện</strong></th>
+                                    <th style="width: 10%"><strong>Đánh giá</strong></th>
+                                    <th style="width: 15%"><strong>Ghi chú</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dòng dữ liệu từ báo cáo -->
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td><span t-field="o.task_description"/></td>
+                                    <td><span t-field="o.employee_id.name"/></td>
+                                    <td><span t-field="o.according_to_plan"/></td>
+                                    <td><span t-field="o.actual_result"/></td>
+                                    <td><span t-field="o.assessment"/></td>
+                                    <td><span t-field="o.notes"/></td>
+                                </tr>
+                                <!-- Thêm 3 dòng trống để người dùng có thể viết tay -->
+                                <tr t-foreach="range(3)" t-as="empty_line">
+                                    <td class="text-center" style="height: 50px;"><span t-esc="empty_line + 2"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Footer chữ ký -->
+                        <div class="row mt-5">
+                            <div class="col-6 text-center">
+                                <strong>BAN GIÁM ĐỐC</strong>
+                            </div>
+                            <div class="col-6 text-center">
+                                <strong>NGƯỜI LẬP BÁO CÁO</strong>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

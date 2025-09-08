@@ -1,0 +1,1165 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-06 08:20+0000\n"
+"PO-Revision-Date: 2025-09-06 08:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_kanban
+msgid "<span class=\"badge badge-success\">Billable</span>"
+msgstr "<span class=\"badge badge-success\">Có thể thanh toán</span>"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_kanban
+msgid "<strong>Customer:</strong>"
+msgstr "<strong>Khách hàng:</strong>"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_kanban
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_kanban
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_kanban
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Ngày:</strong>"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_kanban
+msgid "<strong>Duration:</strong>"
+msgstr "<strong>Thời gian:</strong>"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_kanban
+msgid "<strong>Product:</strong>"
+msgstr "<strong>Sản phẩm:</strong>"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_kanban
+msgid "<strong>Project:</strong>"
+msgstr "<strong>Dự án:</strong>"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_kanban
+msgid "<strong>Request/Contract:</strong>"
+msgstr "<strong>Yêu cầu/Hợp đồng:</strong>"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__according_to_plan
+msgid "According to Plan"
+msgstr "Theo kế hoạch"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+msgid "According to plan..."
+msgstr "Theo kế hoạch..."
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__message_needaction
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__message_needaction
+#: model:ir.model.fields,field_description:project_report.field_project_report__message_needaction
+msgid "Action Needed"
+msgstr "Cần hành động"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__activity_ids
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__activity_ids
+#: model:ir.model.fields,field_description:project_report.field_project_report__activity_ids
+msgid "Activities"
+msgstr "Hoạt động"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__activity_exception_decoration
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__activity_exception_decoration
+#: model:ir.model.fields,field_description:project_report.field_project_report__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Trang trí ngoại lệ hoạt động"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__activity_state
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__activity_state
+#: model:ir.model.fields,field_description:project_report.field_project_report__activity_state
+msgid "Activity State"
+msgstr "Trạng thái hoạt động"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__activity_type_icon
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__activity_type_icon
+#: model:ir.model.fields,field_description:project_report.field_project_report__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu tượng loại hoạt động"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__actual_result
+msgid "Actual Result"
+msgstr "Kết quả thực tế"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report__actual_result
+msgid "Actual Work Result"
+msgstr "Kết quả công việc thực tế"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+msgid "Actual result..."
+msgstr "Kết quả thực tế..."
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_form
+msgid "Actual work result..."
+msgstr "Kết quả công việc thực tế..."
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__address
+msgid "Address where the contract/information request will be executed"
+msgstr "Địa chỉ nơi thực hiện hợp đồng/yêu cầu thông tin"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_form
+msgid "Approve"
+msgstr "Phê duyệt"
+
+#. module: project_report
+#: model:ir.model.fields.selection,name:project_report.selection__contract_performance_report__state__approved
+#: model:ir.model.fields.selection,name:project_report.selection__information_receipt_form__state__approved
+#: model:ir.model.fields.selection,name:project_report.selection__project_report__state__approved
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Approved"
+msgstr "Đã phê duyệt"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__approved_by
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__approved_by
+#: model:ir.model.fields,field_description:project_report.field_project_report__approved_by
+msgid "Approved By"
+msgstr "Phê duyệt bởi"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__approved_date
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__approved_date
+#: model:ir.model.fields,field_description:project_report.field_project_report__approved_date
+msgid "Approved Date"
+msgstr "Ngày phê duyệt"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__assessment
+msgid "Assessment"
+msgstr "Đánh giá"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+msgid "Assessment..."
+msgstr "Đánh giá..."
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__message_attachment_count
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__message_attachment_count
+#: model:ir.model.fields,field_description:project_report.field_project_report__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số lượng tệp đính kèm"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report__is_billable
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Billable"
+msgstr "Có thể thanh toán"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_reject_wizard
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_reject_wizard
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_reject_wizard_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_wizard_form
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_project_report__is_billable
+msgid "Check if this time entry is billable to the customer"
+msgstr "Kiểm tra xem mục thời gian này có thể thanh toán cho khách hàng không"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__company_id
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__company_id
+#: model:ir.model.fields,field_description:project_report.field_project_report__company_id
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Company"
+msgstr "Công ty"
+
+#. module: project_report
+#: model:ir.ui.menu,name:project_report.menu_project_report_config
+msgid "Configuration"
+msgstr "Cấu hình"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_form
+msgid "Confirm"
+msgstr "Xác nhận"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__contract_execution_datetime
+msgid "Contract Execution Period"
+msgstr "Thời gian thực hiện hợp đồng"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__contract_number
+msgid "Contract Number"
+msgstr "Số hợp đồng"
+
+#. module: project_report
+#: model:ir.model,name:project_report.model_contract_performance_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+msgid "Contract Performance Report"
+msgstr "Báo cáo kết quả thực hiện hợp đồng"
+
+#. module: project_report
+#: model:ir.model,name:project_report.model_contract_performance_report_reject_wizard
+msgid "Contract Performance Report Rejection Wizard"
+msgstr "Trình hướng dẫn từ chối báo cáo kết quả thực hiện hợp đồng"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+msgid "Contract Performance Report approved by %s"
+msgstr "Báo cáo kết quả thực hiện hợp đồng được phê duyệt bởi %s"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+msgid "Contract Performance Report created"
+msgstr "Báo cáo kết quả thực hiện hợp đồng đã được tạo"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+#: code:addons/project_report/wizard/contract_performance_report_wizard.py:0
+msgid "Contract Performance Report rejected: %s"
+msgstr "Báo cáo kết quả thực hiện hợp đồng bị từ chối: %s"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+msgid "Contract Performance Report reset to draft"
+msgstr "Báo cáo kết quả thực hiện hợp đồng được đặt lại về bản nháp"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+msgid "Contract Performance Report submitted for approval"
+msgstr "Báo cáo kết quả thực hiện hợp đồng đã được gửi để phê duyệt"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+msgid "Contract Performance Report updated"
+msgstr "Báo cáo kết quả thực hiện hợp đồng đã được cập nhật"
+
+#. module: project_report
+#: model:ir.actions.act_window,name:project_report.action_contract_performance_report
+#: model:ir.ui.menu,name:project_report.menu_contract_performance_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_tree
+msgid "Contract Performance Reports"
+msgstr "Báo cáo kết quả thực hiện hợp đồng"
+
+#. module: project_report
+#: model_terms:ir.actions.act_window,help:project_report.action_contract_performance_report
+msgid "Create your first contract performance report!"
+msgstr "Tạo báo cáo kết quả thực hiện hợp đồng đầu tiên của bạn!"
+
+#. module: project_report
+#: model_terms:ir.actions.act_window,help:project_report.action_project_report
+msgid "Create your first daily report!"
+msgstr "Tạo báo cáo hàng ngày đầu tiên của bạn!"
+
+#. module: project_report
+#: model_terms:ir.actions.act_window,help:project_report.action_information_receipt_form
+msgid "Create your first information receipt form!"
+msgstr "Tạo biểu mẫu tiếp nhận thông tin đầu tiên của bạn!"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__create_uid
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report_reject_wizard__create_uid
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__create_uid
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form_reject_wizard__create_uid
+#: model:ir.model.fields,field_description:project_report.field_project_report__create_uid
+#: model:ir.model.fields,field_description:project_report.field_project_report_reject_wizard__create_uid
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__create_date
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report_reject_wizard__create_date
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__create_date
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form_reject_wizard__create_date
+#: model:ir.model.fields,field_description:project_report.field_project_report__create_date
+#: model:ir.model.fields,field_description:project_report.field_project_report_reject_wizard__create_date
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__customer_id
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__customer_id
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: project_report
+#: model:ir.model,name:project_report.model_project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_form
+msgid "Daily Report"
+msgstr "Báo cáo hàng ngày"
+
+#. module: project_report
+#: model:ir.model,name:project_report.model_project_report_reject_wizard
+msgid "Daily Report Rejection Wizard"
+msgstr "Trình hướng dẫn từ chối báo cáo hàng ngày"
+
+#. module: project_report
+#: model:ir.model,name:project_report.model_project_report_wizard
+msgid "Daily Report Wizard"
+msgstr "Trình hướng dẫn báo cáo hàng ngày"
+
+#. module: project_report
+#: model:ir.actions.act_window,name:project_report.action_project_report
+#: model:ir.ui.menu,name:project_report.menu_project_report_main
+#: model:ir.ui.menu,name:project_report.menu_project_report_root
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_calendar
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_tree
+msgid "Daily Reports"
+msgstr "Báo cáo hàng ngày"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_graph
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_pivot
+msgid "Daily Reports Analysis"
+msgstr "Phân tích báo cáo hàng ngày"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__date
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__date
+#: model:ir.model.fields,field_description:project_report.field_project_report__date
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Date"
+msgstr "Ngày"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__internal_processing_datetime
+msgid ""
+"Date and time when internal processing is completed (can be planned for "
+"future)"
+msgstr ""
+"Ngày và giờ khi xử lý nội bộ hoàn thành (có thể lên kế hoạch cho tương lai)"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__response_delivery_datetime
+msgid ""
+"Date and time when response is delivered to customer (can be planned for "
+"future)"
+msgstr ""
+"Ngày và giờ khi phản hồi được giao cho khách hàng (có thể lên kế hoạch cho tương lai)"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report__deadline
+msgid "Deadline"
+msgstr "Hạn chót"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report__description
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_project_report__description
+msgid "Detailed description of the work performed"
+msgstr "Mô tả chi tiết về công việc đã thực hiện"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__display_name
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report_reject_wizard__display_name
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__display_name
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form_reject_wizard__display_name
+#: model:ir.model.fields,field_description:project_report.field_project_report__display_name
+#: model:ir.model.fields,field_description:project_report.field_project_report_reject_wizard__display_name
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: project_report
+#: model:ir.model.fields.selection,name:project_report.selection__contract_performance_report__state__draft
+#: model:ir.model.fields.selection,name:project_report.selection__information_receipt_form__state__draft
+#: model:ir.model.fields.selection,name:project_report.selection__project_report__state__draft
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Draft"
+msgstr "Bản nháp"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report__unit_amount
+msgid "Duration (Hours)"
+msgstr "Thời gian (Giờ)"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/project_report.py:0
+msgid "Duration cannot be negative."
+msgstr "Thời gian không thể âm."
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/project_report.py:0
+msgid "Duration cannot exceed 24 hours per day."
+msgstr "Thời gian không thể vượt quá 24 giờ mỗi ngày."
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_project_report__unit_amount
+msgid "Duration in hours"
+msgstr "Thời gian tính bằng giờ"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__employee_id
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__employee_id
+#: model:ir.model.fields,field_description:project_report.field_project_report__employee_id
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__employee_id
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Employee"
+msgstr "Nhân viên"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_form
+msgid "Enter the execution address for this contract/information request..."
+msgstr "Nhập địa chỉ thực hiện cho hợp đồng/yêu cầu thông tin này..."
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__address
+msgid "Execution Address"
+msgstr "Địa chỉ thực hiện"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__execution_location
+msgid "Execution Location"
+msgstr "Địa điểm thực hiện"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report__expected_result
+msgid "Expected Result"
+msgstr "Kết quả mong đợi"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_form
+msgid "Expected result..."
+msgstr "Kết quả mong đợi..."
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__message_follower_ids
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__message_follower_ids
+#: model:ir.model.fields,field_description:project_report.field_project_report__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__message_partner_ids
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__message_partner_ids
+#: model:ir.model.fields,field_description:project_report.field_project_report__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_contract_performance_report__activity_type_icon
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__activity_type_icon
+#: model:ir.model.fields,help:project_report.field_project_report__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Biểu tượng Font Awesome ví dụ fa-tasks"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form_reject_wizard__form_id
+msgid "Form"
+msgstr "Biểu mẫu"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__name
+msgid "Form Name"
+msgstr "Tên biểu mẫu"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_form
+msgid "Form Name..."
+msgstr "Tên biểu mẫu..."
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__date_from
+msgid "From Date"
+msgstr "Từ ngày"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/wizard/project_report_wizard.py:0
+msgid "From Date must be before To Date."
+msgstr "Từ ngày phải trước Đến ngày."
+
+#. module: project_report
+#: model:ir.actions.act_window,name:project_report.action_project_report_wizard
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_wizard_form
+msgid "Generate Daily Reports"
+msgstr "Tạo báo cáo hàng ngày"
+
+#. module: project_report
+#: model:ir.ui.menu,name:project_report.menu_project_report_wizard
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_wizard_form
+msgid "Generate Reports"
+msgstr "Tạo báo cáo"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/wizard/project_report_wizard.py:0
+msgid "Generated Reports"
+msgstr "Báo cáo đã tạo"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Group By"
+msgstr "Nhóm theo"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__has_message
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__has_message
+#: model:ir.model.fields,field_description:project_report.field_project_report__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__id
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report_reject_wizard__id
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__id
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form_reject_wizard__id
+#: model:ir.model.fields,field_description:project_report.field_project_report__id
+#: model:ir.model.fields,field_description:project_report.field_project_report_reject_wizard__id
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__activity_exception_icon
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__activity_exception_icon
+#: model:ir.model.fields,field_description:project_report.field_project_report__activity_exception_icon
+msgid "Icon"
+msgstr "Biểu tượng"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_contract_performance_report__activity_exception_icon
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__activity_exception_icon
+#: model:ir.model.fields,help:project_report.field_project_report__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Biểu tượng để chỉ ra hoạt động ngoại lệ."
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_contract_performance_report__message_needaction
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__message_needaction
+#: model:ir.model.fields,help:project_report.field_project_report__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu được chọn, tin nhắn mới cần sự chú ý của bạn."
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_contract_performance_report__message_has_error
+#: model:ir.model.fields,help:project_report.field_contract_performance_report__message_has_sms_error
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__message_has_error
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__message_has_sms_error
+#: model:ir.model.fields,help:project_report.field_project_report__message_has_error
+#: model:ir.model.fields,help:project_report.field_project_report__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu được chọn, một số tin nhắn có lỗi giao hàng."
+
+#. module: project_report
+#: model:ir.model,name:project_report.model_information_receipt_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_form
+msgid "Information Receipt Form"
+msgstr "Biểu mẫu tiếp nhận thông tin"
+
+#. module: project_report
+#: model:ir.model,name:project_report.model_information_receipt_form_reject_wizard
+msgid "Information Receipt Form Rejection Wizard"
+msgstr "Trình hướng dẫn từ chối biểu mẫu tiếp nhận thông tin"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+msgid "Information Receipt Form approved by %s"
+msgstr "Biểu mẫu tiếp nhận thông tin được phê duyệt bởi %s"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+msgid "Information Receipt Form created"
+msgstr "Biểu mẫu tiếp nhận thông tin đã được tạo"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+#: code:addons/project_report/wizard/information_receipt_form_wizard.py:0
+msgid "Information Receipt Form rejected: %s"
+msgstr "Biểu mẫu tiếp nhận thông tin bị từ chối: %s"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+msgid "Information Receipt Form reset to draft"
+msgstr "Biểu mẫu tiếp nhận thông tin được đặt lại về bản nháp"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+msgid "Information Receipt Form submitted for approval"
+msgstr "Biểu mẫu tiếp nhận thông tin đã được gửi để phê duyệt"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+msgid "Information Receipt Form updated"
+msgstr "Biểu mẫu tiếp nhận thông tin đã được cập nhật"
+
+#. module: project_report
+#: model:ir.actions.act_window,name:project_report.action_information_receipt_form
+#: model:ir.ui.menu,name:project_report.menu_information_receipt_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_tree
+msgid "Information Receipt Forms"
+msgstr "Biểu mẫu tiếp nhận thông tin"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__internal_processing_datetime
+msgid "Internal Processing Time"
+msgstr "Thời gian xử lý nội bộ"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+msgid "Internal Processing Time cannot be later than Response/Delivery Time."
+msgstr "Thời gian xử lý nội bộ không thể muộn hơn thời gian phản hồi/giao hàng."
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__message_is_follower
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__message_is_follower
+#: model:ir.model.fields,field_description:project_report.field_project_report__message_is_follower
+msgid "Is Follower"
+msgstr "Là người theo dõi"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__write_uid
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report_reject_wizard__write_uid
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__write_uid
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form_reject_wizard__write_uid
+#: model:ir.model.fields,field_description:project_report.field_project_report__write_uid
+#: model:ir.model.fields,field_description:project_report.field_project_report_reject_wizard__write_uid
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__write_date
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report_reject_wizard__write_date
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__write_date
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form_reject_wizard__write_date
+#: model:ir.model.fields,field_description:project_report.field_project_report__write_date
+#: model:ir.model.fields,field_description:project_report.field_project_report_reject_wizard__write_date
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__message_has_error
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__message_has_error
+#: model:ir.model.fields,field_description:project_report.field_project_report__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi giao tin nhắn"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__message_ids
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__message_ids
+#: model:ir.model.fields,field_description:project_report.field_project_report__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__my_activity_date_deadline
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__my_activity_date_deadline
+#: model:ir.model.fields,field_description:project_report.field_project_report__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Hạn chót hoạt động của tôi"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+#: code:addons/project_report/models/information_receipt_form.py:0
+#: code:addons/project_report/models/project_report.py:0
+msgid "New"
+msgstr "Mới"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__activity_calendar_event_id
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__activity_calendar_event_id
+#: model:ir.model.fields,field_description:project_report.field_project_report__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Sự kiện lịch hoạt động tiếp theo"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__activity_date_deadline
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__activity_date_deadline
+#: model:ir.model.fields,field_description:project_report.field_project_report__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Hạn chót hoạt động tiếp theo"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__activity_summary
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__activity_summary
+#: model:ir.model.fields,field_description:project_report.field_project_report__activity_summary
+msgid "Next Activity Summary"
+msgstr "Tóm tắt hoạt động tiếp theo"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__activity_type_id
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__activity_type_id
+#: model:ir.model.fields,field_description:project_report.field_project_report__activity_type_id
+msgid "Next Activity Type"
+msgstr "Loại hoạt động tiếp theo"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__notes
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__notes
+msgid "Notes"
+msgstr "Ghi chú"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_form
+msgid "Notes..."
+msgstr "Ghi chú..."
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__message_needaction_counter
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__message_needaction_counter
+#: model:ir.model.fields,field_description:project_report.field_project_report__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng hành động"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__message_has_error_counter
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__message_has_error_counter
+#: model:ir.model.fields,field_description:project_report.field_project_report__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lượng lỗi"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_contract_performance_report__message_needaction_counter
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__message_needaction_counter
+#: model:ir.model.fields,help:project_report.field_project_report__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Số lượng tin nhắn cần hành động"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_contract_performance_report__message_has_error_counter
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__message_has_error_counter
+#: model:ir.model.fields,help:project_report.field_project_report__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số lượng tin nhắn có lỗi giao hàng"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+msgid "Only draft forms can be submitted."
+msgstr "Chỉ biểu mẫu nháp mới có thể được gửi."
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+#: code:addons/project_report/models/project_report.py:0
+msgid "Only draft reports can be submitted."
+msgstr "Chỉ báo cáo nháp mới có thể được gửi."
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+msgid "Only submitted forms can be approved."
+msgstr "Chỉ biểu mẫu đã gửi mới có thể được phê duyệt."
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+msgid "Only submitted forms can be rejected."
+msgstr "Chỉ biểu mẫu đã gửi mới có thể bị từ chối."
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+#: code:addons/project_report/models/project_report.py:0
+msgid "Only submitted reports can be approved."
+msgstr "Chỉ báo cáo đã gửi mới có thể được phê duyệt."
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+#: code:addons/project_report/models/project_report.py:0
+msgid "Only submitted reports can be rejected."
+msgstr "Chỉ báo cáo đã gửi mới có thể bị từ chối."
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_reject_wizard
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_reject_wizard
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_reject_wizard_form
+msgid "Please provide a reason for rejection..."
+msgstr "Vui lòng cung cấp lý do từ chối..."
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__product_name
+msgid "Product Name"
+msgstr "Tên sản phẩm"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report__project_id
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__project_id
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Project"
+msgstr "Dự án"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__rating_ids
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__rating_ids
+#: model:ir.model.fields,field_description:project_report.field_project_report__rating_ids
+msgid "Ratings"
+msgstr "Đánh giá"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__received_information
+msgid "Received Information"
+msgstr "Thông tin đã nhận"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_form
+msgid "Received information..."
+msgstr "Thông tin đã nhận..."
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_reject_wizard
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_reject_wizard
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_reject_wizard_form
+msgid "Reject"
+msgstr "Từ chối"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+#: model:ir.actions.act_window,name:project_report.action_contract_performance_report_reject_wizard
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_reject_wizard
+msgid "Reject Contract Performance Report"
+msgstr "Từ chối báo cáo kết quả thực hiện hợp đồng"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_reject_wizard_form
+msgid "Reject Daily Report"
+msgstr "Từ chối báo cáo hàng ngày"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+#: model:ir.actions.act_window,name:project_report.action_information_receipt_form_reject_wizard
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_reject_wizard
+msgid "Reject Information Receipt Form"
+msgstr "Từ chối biểu mẫu tiếp nhận thông tin"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/project_report.py:0
+msgid "Reject Report"
+msgstr "Từ chối báo cáo"
+
+#. module: project_report
+#: model:ir.model.fields.selection,name:project_report.selection__contract_performance_report__state__rejected
+#: model:ir.model.fields.selection,name:project_report.selection__information_receipt_form__state__rejected
+#: model:ir.model.fields.selection,name:project_report.selection__project_report__state__rejected
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Rejected"
+msgstr "Đã từ chối"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__rejection_reason
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report_reject_wizard__rejection_reason
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__rejection_reason
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form_reject_wizard__rejection_reason
+#: model:ir.model.fields,field_description:project_report.field_project_report__rejection_reason
+#: model:ir.model.fields,field_description:project_report.field_project_report_reject_wizard__rejection_reason
+msgid "Rejection Reason"
+msgstr "Lý do từ chối"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/project_report.py:0
+msgid "Related Timesheets"
+msgstr "Bảng chấm công liên quan"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report_reject_wizard__report_id
+#: model:ir.model.fields,field_description:project_report.field_project_report_reject_wizard__report_id
+msgid "Report"
+msgstr "Báo cáo"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__name
+#: model:ir.model.fields,field_description:project_report.field_project_report__name
+msgid "Report Name"
+msgstr "Tên báo cáo"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_form
+msgid "Report Name..."
+msgstr "Tên báo cáo..."
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/project_report.py:0
+msgid "Report approved by %s"
+msgstr "Báo cáo được phê duyệt bởi %s"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/project_report.py:0
+msgid "Report created"
+msgstr "Báo cáo đã được tạo"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+#: code:addons/project_report/models/information_receipt_form.py:0
+#: code:addons/project_report/models/project_report.py:0
+msgid "Report date cannot be in the future."
+msgstr "Ngày báo cáo không thể trong tương lai."
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/project_report.py:0
+msgid "Report rejected: %s"
+msgstr "Báo cáo bị từ chối: %s"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/project_report.py:0
+msgid "Report reset to draft"
+msgstr "Báo cáo được đặt lại về bản nháp"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/project_report.py:0
+msgid "Report submitted for approval"
+msgstr "Báo cáo đã được gửi để phê duyệt"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/project_report.py:0
+msgid "Report updated"
+msgstr "Báo cáo đã được cập nhật"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__request_contract_number
+msgid "Request/Contract Number"
+msgstr "Số yêu cầu/Hợp đồng"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_form
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_form
+msgid "Reset to Draft"
+msgstr "Đặt lại về bản nháp"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__response_delivery_datetime
+msgid "Response/Delivery Time to Customer"
+msgstr "Thời gian phản hồi/Giao hàng cho khách hàng"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__activity_user_id
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__activity_user_id
+#: model:ir.model.fields,field_description:project_report.field_project_report__activity_user_id
+msgid "Responsible User"
+msgstr "Người dùng chịu trách nhiệm"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__message_has_sms_error
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__message_has_sms_error
+#: model:ir.model.fields,field_description:project_report.field_project_report__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Lỗi giao SMS"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_search
+msgid "Search Contract Performance Reports"
+msgstr "Tìm kiếm báo cáo kết quả thực hiện hợp đồng"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Search Daily Reports"
+msgstr "Tìm kiếm báo cáo hàng ngày"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_information_receipt_form_search
+msgid "Search Information Receipt Forms"
+msgstr "Tìm kiếm biểu mẫu tiếp nhận thông tin"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_project_report__task_id
+msgid "Select a specific task within the project"
+msgstr "Chọn một nhiệm vụ cụ thể trong dự án"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__state
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__state
+#: model:ir.model.fields,field_description:project_report.field_project_report__state
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_contract_performance_report__activity_state
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__activity_state
+#: model:ir.model.fields,help:project_report.field_project_report__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Trạng thái dựa trên hoạt động\n"
+"Quá hạn: Ngày đến hạn đã qua\n"
+"Hôm nay: Ngày hoạt động là hôm nay\n"
+"Đã lên kế hoạch: Hoạt động tương lai."
+
+#. module: project_report
+#: model:ir.model.fields.selection,name:project_report.selection__contract_performance_report__state__submitted
+#: model:ir.model.fields.selection,name:project_report.selection__information_receipt_form__state__submitted
+#: model:ir.model.fields.selection,name:project_report.selection__project_report__state__submitted
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "Submitted"
+msgstr "Đã gửi"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report__task_id
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__task_id
+msgid "Task"
+msgstr "Nhiệm vụ"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report__task_content
+msgid "Task Content"
+msgstr "Nội dung nhiệm vụ"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__task_description
+msgid "Task Description"
+msgstr "Mô tả nhiệm vụ"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_form
+msgid "Task content..."
+msgstr "Nội dung nhiệm vụ..."
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_contract_performance_report_form
+msgid "Task description..."
+msgstr "Mô tả nhiệm vụ..."
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "This Month"
+msgstr "Tháng này"
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_search
+msgid "This Week"
+msgstr "Tuần này"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_project_report_wizard__date_to
+msgid "To Date"
+msgstr "Đến ngày"
+
+#. module: project_report
+#: model_terms:ir.actions.act_window,help:project_report.action_contract_performance_report
+msgid ""
+"Track contract performance and execution progress with detailed reports."
+msgstr ""
+"Theo dõi hiệu suất hợp đồng và tiến độ thực hiện với báo cáo chi tiết."
+
+#. module: project_report
+#: model_terms:ir.actions.act_window,help:project_report.action_information_receipt_form
+msgid ""
+"Track customer information requests and processing times with detailed "
+"forms."
+msgstr ""
+"Theo dõi yêu cầu thông tin khách hàng và thời gian xử lý với biểu mẫu chi tiết."
+
+#. module: project_report
+#: model_terms:ir.actions.act_window,help:project_report.action_project_report
+msgid ""
+"Track daily work progress and employee contributions with simple reports."
+msgstr ""
+"Theo dõi tiến độ công việc hàng ngày và đóng góp của nhân viên với báo cáo đơn giản."
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_contract_performance_report__activity_exception_decoration
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__activity_exception_decoration
+#: model:ir.model.fields,help:project_report.field_project_report__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Loại hoạt động ngoại lệ trong bản ghi."
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__user_id
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__user_id
+#: model:ir.model.fields,field_description:project_report.field_project_report__user_id
+msgid "User"
+msgstr "Người dùng"
+
+#. module: project_report
+#: model:ir.model.fields,field_description:project_report.field_contract_performance_report__website_message_ids
+#: model:ir.model.fields,field_description:project_report.field_information_receipt_form__website_message_ids
+#: model:ir.model.fields,field_description:project_report.field_project_report__website_message_ids
+msgid "Website Messages"
+msgstr "Tin nhắn trang web"
+
+#. module: project_report
+#: model:ir.model.fields,help:project_report.field_contract_performance_report__website_message_ids
+#: model:ir.model.fields,help:project_report.field_information_receipt_form__website_message_ids
+#: model:ir.model.fields,help:project_report.field_project_report__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử giao tiếp trang web"
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/information_receipt_form.py:0
+msgid ""
+"You cannot edit approved forms. Only managers can modify approved forms."
+msgstr ""
+"Bạn không thể chỉnh sửa biểu mẫu đã phê duyệt. Chỉ quản lý mới có thể sửa đổi biểu mẫu đã phê duyệt."
+
+#. module: project_report
+#. odoo-python
+#: code:addons/project_report/models/contract_performance_report.py:0
+msgid ""
+"You cannot edit approved reports. Only managers can modify approved reports."
+msgstr ""
+"Bạn không thể chỉnh sửa báo cáo đã phê duyệt. Chỉ quản lý mới có thể sửa đổi báo cáo đã phê duyệt."
+
+#. module: project_report
+#: model_terms:ir.ui.view,arch_db:project_report.view_project_report_kanban
+msgid "hours"
+msgstr "giờ"

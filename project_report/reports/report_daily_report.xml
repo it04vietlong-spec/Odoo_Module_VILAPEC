@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_daily_report_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="text-center">
+                            <h3><strong>BÁO CÁO CÔNG VIỆC NGÀY</strong></h3>
+                        </div>
+                        
+                        <!-- Header thông tin -->
+                        <table class="table table-borderless mt-3">
+                            <tr>
+                                <td width="15%"><strong>TÊN:</strong></td>
+                                <td width="35%">.......................</td>
+                                <td width="15%"><strong>CHỨC VỤ:</strong></td>
+                                <td width="35%">.......................</td>
+                            </tr>
+                            <tr>
+                                <td><strong>BỘ PHẬN:</strong></td>
+                                <td>.......................</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+
+                        <!-- Bảng công việc chính -->
+                        <table class="table table-bordered mt-4">
+                            <thead>
+                                <tr class="text-center">
+                                    <th rowspan="2" style="vertical-align: middle; width: 10%"><strong>THỜI GIAN</strong></th>
+                                    <th rowspan="2" style="vertical-align: middle; width: 25%"><strong>NỘI DUNG CÔNG VIỆC</strong></th>
+                                    <th colspan="2"><strong>KẾT QUẢ CẦN ĐẠT</strong></th>
+                                    <th colspan="2"><strong>KẾT QUẢ CÔNG VIỆC THỰC TẾ</strong></th>
+                                    <th rowspan="2" style="vertical-align: middle; width: 10%"><strong>GHI CHÚ</strong></th>
+                                    <th rowspan="2" style="vertical-align: middle; width: 15%"><strong>ĐÁNH GIÁ CỦA TRƯỞNG BỘ PHẬN</strong></th>
+                                </tr>
+                                <tr class="text-center">
+                                    <th style="width: 10%"><strong>DEADLINE</strong></th>
+                                    <th style="width: 15%"><strong>KẾT QUẢ CÔNG VIỆC</strong></th>
+                                    <th style="width: 10%"><strong>DEADLINE</strong></th>
+                                    <th style="width: 15%"><strong>KẾT QUẢ CÔNG VIỆC</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dòng dữ liệu từ báo cáo -->
+                                <tr>
+                                    <td class="text-center">
+                                        <span t-field="o.date" t-options='{"format": "dd/MM"}'/>
+                                    </td>
+                                    <td style="text-align: left; padding-left: 8px;"><span t-field="o.task_content"/></td>
+                                    <td class="text-center">
+                                        <span t-field="o.expected_result_deadline" t-options='{"format": "dd/MM"}'/>
+                                    </td>
+                                    <td style="text-align: left; padding-left: 8px;"><span t-field="o.expected_result"/></td>
+                                    <td class="text-center">
+                                        <span t-field="o.actual_result_deadline" t-options='{"format": "dd/MM"}'/>
+                                    </td>
+                                    <td style="text-align: left; padding-left: 8px;"><span t-field="o.actual_result"/></td>
+                                    <td style="text-align: left; padding-left: 8px;"><span t-field="o.description"/></td>
+                                    <td></td>
+                                </tr>
+                                <!-- Thêm 2 dòng trống để người dùng có thể viết tay -->
+                                <tr t-foreach="range(2)" t-as="empty_line">
+                                    <td style="height: 50px;"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Footer chữ ký -->
+                        <div class="row mt-5">
+                            <div class="col-12 text-right">
+                                <span>Hà Nội, ngày ..... tháng ..... năm .....</span>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-4">
+                            <div class="col-4 text-center">
+                                <strong>Trưởng bộ phận</strong>
+                            </div>
+                            <div class="col-4 text-center">
+                                <strong>Hành chính nhân sự</strong>
+                            </div>
+                            <div class="col-4 text-center">
+                                <strong>Người lập</strong>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

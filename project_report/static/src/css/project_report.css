@@ -1,0 +1,226 @@
+/* Project Report Styles */
+
+.o_project_report_kanban .o_kanban_card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.o_project_report_kanban .o_kanban_card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.o_project_report_kanban .o_kanban_card.border-primary {
+    border-left: 4px solid #007bff;
+}
+
+.o_project_report_kanban .o_kanban_card.border-warning {
+    border-left: 4px solid #ffc107;
+}
+
+.o_project_report_kanban .o_kanban_card.border-success {
+    border-left: 4px solid #28a745;
+}
+
+.o_project_report_kanban .o_kanban_card.border-danger {
+    border-left: 4px solid #dc3545;
+}
+
+.o_project_report_form .o_form_statusbar {
+    background: #f8f9fa; /* Simple light gray background */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.o_project_report_form .o_statusbar_status {
+    color: #495057; /* Simple dark gray text */
+    font-weight: 500;
+}
+
+.o_project_report_list .o_data_row {
+    transition: background-color 0.2s ease;
+}
+
+.o_project_report_list .o_data_row:hover {
+    background-color: #f8f9fa;
+}
+
+.o_project_report_list .o_data_cell {
+    padding: 8px 12px;
+}
+
+/* Status badges */
+.o_project_report_status_draft {
+    background-color: #6c757d;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.o_project_report_status_submitted {
+    background-color: #ffc107;
+    color: #212529;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.o_project_report_status_approved {
+    background-color: #28a745;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.o_project_report_status_rejected {
+    background-color: #dc3545;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Duration field styling */
+.o_field_duration {
+    font-weight: 600;
+    color: #495057;
+}
+
+.o_field_duration::after {
+    content: " hrs";
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+/* Contract Performance Report Styles */
+.o_contract_performance_report_kanban .o_kanban_card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #6c757d; /* Simple gray border */
+}
+
+.o_contract_performance_report_kanban .o_kanban_card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.o_contract_performance_report_form .o_form_statusbar {
+    background: #f8f9fa; /* Simple light gray background */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.o_contract_performance_report_form .o_statusbar_status {
+    color: #495057; /* Simple dark gray text */
+    font-weight: 500;
+}
+
+.o_contract_performance_report_list .o_data_row {
+    transition: background-color 0.2s ease;
+}
+
+.o_contract_performance_report_list .o_data_row:hover {
+    background-color: #f8f9fa;
+}
+
+/* Information Receipt Form Styles */
+.o_information_receipt_form_kanban .o_kanban_card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #6c757d; /* Simple gray border */
+}
+
+.o_information_receipt_form_kanban .o_kanban_card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.o_information_receipt_form_form .o_form_statusbar {
+    background: #f8f9fa; /* Simple light gray background */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.o_information_receipt_form_form .o_statusbar_status {
+    color: #495057; /* Simple dark gray text */
+    font-weight: 500;
+}
+
+.o_information_receipt_form_list .o_data_row {
+    transition: background-color 0.2s ease;
+}
+
+.o_information_receipt_form_list .o_data_row:hover {
+    background-color: #f8f9fa;
+}
+
+/* Simple status badges for new modules */
+.o_contract_performance_report_status_draft,
+.o_information_receipt_form_status_draft {
+    background-color: #6c757d;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.o_contract_performance_report_status_submitted,
+.o_information_receipt_form_status_submitted {
+    background-color: #ffc107;
+    color: #212529;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.o_contract_performance_report_status_approved,
+.o_information_receipt_form_status_approved {
+    background-color: #28a745;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.o_contract_performance_report_status_rejected,
+.o_information_receipt_form_status_rejected {
+    background-color: #dc3545;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .o_project_report_kanban .o_kanban_card,
+    .o_contract_performance_report_kanban .o_kanban_card,
+    .o_information_receipt_form_kanban .o_kanban_card {
+        margin-bottom: 10px;
+    }
+    
+    .o_project_report_form .o_form_statusbar,
+    .o_contract_performance_report_form .o_form_statusbar,
+    .o_information_receipt_form_form .o_form_statusbar {
+        padding: 8px;
+    }
+}

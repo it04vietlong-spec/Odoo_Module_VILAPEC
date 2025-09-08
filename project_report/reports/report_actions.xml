@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Báo cáo công việc ngày -->
+    <record id="action_report_daily_report" model="ir.actions.report">
+        <field name="name">Báo cáo công việc ngày</field>
+        <field name="model">project.report</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">project_report.report_daily_report_template</field>
+        <field name="report_file">project_report.report_daily_report_template</field>
+        <field name="print_report_name">'Bao_cao_cong_viec_ngay_%s' % (object.name or '')</field>
+        <field name="binding_model_id" ref="model_project_report"/>
+    </record>
+
+    <!-- Báo cáo kết quả thực hiện hợp đồng -->
+    <record id="action_report_contract_performance" model="ir.actions.report">
+        <field name="name">Báo cáo kết quả thực hiện hợp đồng</field>
+        <field name="model">contract.performance.report</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">project_report.report_contract_performance_template</field>
+        <field name="report_file">project_report.report_contract_performance_template</field>
+        <field name="print_report_name">'Bao_cao_ket_qua_thuc_hien_hop_dong_%s' % (object.name or '')</field>
+        <field name="binding_model_id" ref="model_contract_performance_report"/>
+    </record>
+
+    <!-- Phiếu tiếp nhận thông tin -->
+    <record id="action_report_information_receipt" model="ir.actions.report">
+        <field name="name">Phiếu tiếp nhận thông tin</field>
+        <field name="model">information.receipt.form</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">project_report.report_information_receipt_template</field>
+        <field name="report_file">project_report.report_information_receipt_template</field>
+        <field name="print_report_name">'Phieu_tiep_nhan_thong_tin_%s' % (object.name or '')</field>
+        <field name="binding_model_id" ref="model_information_receipt_form"/>
+    </record>
+</odoo>

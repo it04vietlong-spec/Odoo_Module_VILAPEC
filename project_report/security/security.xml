@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="project_report_rule_user" model="ir.rule">
+            <field name="name">Daily Report: User sees own records only</field>
+            <field name="model_id" ref="model_project_report"/>
+            <field name="domain_force">[('user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('hr_timesheet.group_hr_timesheet_user'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="False"/>
+        </record>
+
+        <record id="project_report_rule_manager" model="ir.rule">
+            <field name="name">Daily Report: Manager Access</field>
+            <field name="model_id" ref="model_project_report"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('hr_timesheet.group_hr_timesheet_approver'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+        <record id="project_report_rule_admin" model="ir.rule">
+            <field name="name">Daily Report: Admin Access</field>
+            <field name="model_id" ref="model_project_report"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('base.group_system'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+        <record id="project_report_rule_multi_company" model="ir.rule">
+            <field name="name">Daily Report: Multi-company</field>
+            <field name="model_id" ref="model_project_report"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="global" eval="True"/>
+        </record>
+
+        <record id="project_report_wizard_rule_user" model="ir.rule">
+            <field name="name">Daily Report Wizard: User Access</field>
+            <field name="model_id" ref="model_project_report_wizard"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('hr_timesheet.group_hr_timesheet_user'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+        <record id="project_report_reject_wizard_rule_user" model="ir.rule">
+            <field name="name">Daily Report Reject Wizard: User Access</field>
+            <field name="model_id" ref="model_project_report_reject_wizard"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('hr_timesheet.group_hr_timesheet_user'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+        <!-- Contract Performance Report Rules -->
+        <record id="contract_performance_report_rule_user" model="ir.rule">
+            <field name="name">Contract Performance Report: User sees own records only</field>
+            <field name="model_id" ref="model_contract_performance_report"/>
+            <field name="domain_force">[('user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('hr_timesheet.group_hr_timesheet_user'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="False"/>
+        </record>
+
+        <record id="contract_performance_report_rule_manager" model="ir.rule">
+            <field name="name">Contract Performance Report: Manager Access</field>
+            <field name="model_id" ref="model_contract_performance_report"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('hr_timesheet.group_hr_timesheet_approver'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+        <record id="contract_performance_report_rule_multi_company" model="ir.rule">
+            <field name="name">Contract Performance Report: Multi-company</field>
+            <field name="model_id" ref="model_contract_performance_report"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="global" eval="True"/>
+        </record>
+
+        <record id="contract_performance_report_reject_wizard_rule_user" model="ir.rule">
+            <field name="name">Contract Performance Report Reject Wizard: User Access</field>
+            <field name="model_id" ref="model_contract_performance_report_reject_wizard"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('hr_timesheet.group_hr_timesheet_user'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+        <!-- Information Receipt Form Rules -->
+        <record id="information_receipt_form_rule_user" model="ir.rule">
+            <field name="name">Information Receipt Form: User sees own records only</field>
+            <field name="model_id" ref="model_information_receipt_form"/>
+            <field name="domain_force">[('user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('hr_timesheet.group_hr_timesheet_user'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="False"/>
+        </record>
+
+        <record id="information_receipt_form_rule_manager" model="ir.rule">
+            <field name="name">Information Receipt Form: Manager Access</field>
+            <field name="model_id" ref="model_information_receipt_form"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('hr_timesheet.group_hr_timesheet_approver'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+        <record id="information_receipt_form_rule_multi_company" model="ir.rule">
+            <field name="name">Information Receipt Form: Multi-company</field>
+            <field name="model_id" ref="model_information_receipt_form"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+            <field name="global" eval="True"/>
+        </record>
+
+        <record id="information_receipt_form_reject_wizard_rule_user" model="ir.rule">
+            <field name="name">Information Receipt Form Reject Wizard: User Access</field>
+            <field name="model_id" ref="model_information_receipt_form_reject_wizard"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('hr_timesheet.group_hr_timesheet_user'))]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+    </data>
+</odoo>
